@@ -3,13 +3,7 @@
 #include <iostream>
 #include <time.h>
 #include <windows.h>
-void gotoxy(int x, int y)
-{
-COORD coord;
-coord.X = x;
-coord.Y = y;
-SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
-}
+
 void delay(unsigned int mseconds)
 {
 clock_t goal = mseconds + clock();
