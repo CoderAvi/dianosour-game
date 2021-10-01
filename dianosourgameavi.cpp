@@ -4,6 +4,14 @@
 #include <time.h>
 #include <windows.h>
 
+void gotoxy(int x, int y)
+{
+COORD coord;
+coord.X = x;
+coord.Y = y;
+SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+
 void delay(unsigned int mseconds)
 {
 clock_t goal = mseconds + clock();
@@ -104,6 +112,12 @@ if(x==73)
 {
 x=0;
 scr++;
+gotoxy(70,2);
+printf(" ");
+gotoxy(70,2);
+printf("%d",scr);
+if(speed>20)
+speed--;
 
 }
 }
