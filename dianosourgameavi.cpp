@@ -24,7 +24,7 @@ gotoxy(62,2);
 printf("SCORE : ");
 gotoxy(1,25);
 for(int x=0;x<79;x++)
-printf("ß");
+printf("ÃŸ");
 }
 int t,speed=40;
 void ds(int jump=0)
@@ -38,36 +38,36 @@ else t++;
 gotoxy(2,15-t);
 printf(" ");
 gotoxy(2,16-t);
-printf(" ÜÛßÛÛÛÛÜ");
+printf(" ÃœÃ›ÃŸÃ›Ã›Ã›Ã›Ãœ");
 gotoxy(2,17-t);
-printf(" ÛÛÛÛÛÛÛÛ");
+printf(" Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›");
 gotoxy(2,18-t);
-printf(" ÛÛÛÛÛßßß");
+printf(" Ã›Ã›Ã›Ã›Ã›ÃŸÃŸÃŸ");
 gotoxy(2,19-t);
-printf(" Û ÜÛÛÛÛßßß ");
+printf(" Ã› ÃœÃ›Ã›Ã›Ã›ÃŸÃŸÃŸ ");
 gotoxy(2,20-t);
-printf(" ÛÛÜ ÜÛÛÛÛÛÛÜÜÜ ");
+printf(" Ã›Ã›Ãœ ÃœÃ›Ã›Ã›Ã›Ã›Ã›ÃœÃœÃœ ");
 gotoxy(2,21-t);
-printf(" ßÛÛÛÛÛÛÛÛÛÛÛ ß ");
+printf(" ÃŸÃ›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã› ÃŸ ");
 gotoxy(2,22-t);
-printf(" ßÛÛÛÛÛÛÛß ");
+printf(" ÃŸÃ›Ã›Ã›Ã›Ã›Ã›Ã›ÃŸ ");
 gotoxy(2,23-t);
 if(jump==1 || jump==2){
-printf(" ÛÛß ßÛ ");
+printf(" Ã›Ã›ÃŸ ÃŸÃ› ");
 gotoxy(2,24-t);
-printf(" ÛÜ ÛÜ ");
+printf(" Ã›Ãœ Ã›Ãœ ");
 }else if(a==1)
 {
-printf(" ßÛÛß ßßß ");
+printf(" ÃŸÃ›Ã›ÃŸ ÃŸÃŸÃŸ ");
 gotoxy(2,24-t);
-printf(" ÛÜ ");
+printf(" Ã›Ãœ ");
 a=2;
 }
 else if(a==2)
 {
-printf(" ßÛÜ ßÛ ");
+printf(" ÃŸÃ›Ãœ ÃŸÃ› ");
 gotoxy(2,24-t);
-printf(" ÛÜ ");
+printf(" Ã›Ãœ ");
 a=1;
 }
 gotoxy(2,25-t);
@@ -78,7 +78,7 @@ else
 
 
 {
-printf("ßßßßßßßßßßßßßßßßß");
+printf("ÃŸÃŸÃŸÃŸÃŸÃŸÃŸÃŸÃŸÃŸÃŸÃŸÃŸÃŸÃŸÃŸÃŸ");
 }
 delay(speed);
 }
@@ -96,26 +96,21 @@ gotoxy(36,8);
 printf(" ");
 }
 gotoxy(74-x,20);
-printf("Û Û ");
+printf("Ã› Ã› ");
 gotoxy(74-x,21);
-printf("Û Û ");
+printf("Ã› Ã› ");
 gotoxy(74-x,22);
-printf("ÛÜÜÜÜÛ ");
+printf("Ã›ÃœÃœÃœÃœÃ› ");
 gotoxy(74-x,23);
-printf(" Û ");
+printf(" Ã› ");
 gotoxy(74-x,24);
-printf(" Û " );
+printf(" Ã› " );
 x++;
 if(x==73)
 {
 x=0;
 scr++;
-gotoxy(70,2);
-printf(" ");
-gotoxy(70,2);
-printf("%d",scr);
-if(speed>20)
-speed--;
+
 }
 }
 int main()
